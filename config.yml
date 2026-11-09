@@ -1,0 +1,42 @@
+# Названия objective в скорборде (проверьте командой /scoreboard objectives list)
+scoreboard:
+  kills-objective: "kills"
+  deaths-objective: "deaths"
+
+# Слабая отдача при ударе игрока по игроку.
+# 1.0 = обычная отдача, 0.0 = совсем нет. Рекомендую 0.5-0.7
+knockback:
+  enabled: true
+  horizontal-multiplier: 0.6
+  vertical-multiplier: 0.8
+
+# Награда за убийство игрока (Vault / DualEco). 0 = выключено
+reward:
+  kill-amount: 100
+
+# Заказы на убийство
+contracts:
+  min-amount: 50000
+  max-per-player: 2
+  lifetime-hours: 24
+
+# Сколько мест в топе
+top:
+  size: 10
+
+# Бедрок-ПВП (как в Bedrock Edition)
+bedrock-pvp:
+  enabled: true
+  no-attack-cooldown: true     # нет КД на удар, урон всегда полный
+  disable-sweep: true          # нет размашистой атаки мечом (в бедроке её нет)
+  invulnerability-ticks: 10    # неуязвимость после удара: 10 = как в бедроке, 20 = как в джаве
+
+# Тихий лимит КПС: лишние удары просто не засчитываются.
+# Без сообщений, кика и бана. 0 = выключено
+cps-limit: 18
+
+# Критические удары
+crit:
+  enabled: true
+  every-hits: 4                # каждый N-й удар по игроку критический
+  damage-multiplier: 1.5       # во сколько раз больше урон
