@@ -1,0 +1,23 @@
+name: PvPSystem
+version: 1.0
+main: me.server.pvpsystem.PvPSystem
+api-version: "1.21"
+softdepend: [Vault, DualEco]
+commands:
+  contract:
+    description: Заказы на убийство
+    aliases: [contracts, zakaz, kontrakt]
+  topkills:
+    description: Топ убийц
+  topdeaths:
+    description: Топ по смертям
+  topkd:
+    description: Топ по K/D
+  stats:
+    description: Личная статистика
+  pvpreload:
+    description: Перезагрузка конфига
+    permission: pvpsystem.reload
+permissions:
+  pvpsystem.reload:
+    default: op
